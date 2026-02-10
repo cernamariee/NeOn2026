@@ -3,42 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeOn 2026 Competition</title>
-    <style>
-        body {
-            background-color: #001F3F; /* Dark Blue */
-            color: #FFFFFF; /* Bright White */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            background-color: #005EB8;
-            padding: 10px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        section {
-            margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Competition Categories</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to NeOn 2026!</h1>
-    </header>
-    <section>
-        <h2>About the Competition</h2>
-        <p>This year's competition focuses on modern neon-themed projects. Get ready to shine!</p>
-    </section>
-    <footer>
-        <p>&copy; 2026 NeOn Competition</p>
-    </footer>
+    <h1>Competition Categories</h1>
+    <ul>
+        <li>Category 1: Description of category 1.</li>
+        <li>Category 2: Description of category 2.</li>
+        <li>Category 3: Description of category 3.</li>
+        <li>Category 4: Description of category 4.</li>
+        <li>Category 5: Description of category 5.</li>
+    </ul>
+
+    <h2>Register for a Competition</h2>
+    <form action="/submit_registration" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="category">Select Category:</label><br>
+        <select id="category" name="category" required>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+            <option value="category3">Category 3</option>
+            <option value="category4">Category 4</option>
+            <option value="category5">Category 5</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
 </body>
 </html>
